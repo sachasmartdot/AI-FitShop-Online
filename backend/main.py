@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import json
-from fit_engine import recommend_size
+from backend.fit_engine import recommend_size
 # pour passe en prod cette version est mieux
 import os
 
