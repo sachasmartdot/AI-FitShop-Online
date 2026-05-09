@@ -1,7 +1,7 @@
 let selectedProduct = null;
 
 // Load products
-fetch("http://127.0.0.1:8000/products")
+fetch("https://ai-fitshop-online.onrender.com/products")
 .then(res => res.json())
 .then(data => {
     const container = document.getElementById("products");
@@ -28,7 +28,7 @@ fetch("http://127.0.0.1:8000/products")
 function getRecommendation() {
     const foot = document.getElementById("foot").value;
 
-    fetch("http://127.0.0.1:8000/recommend", {
+    fetch("https://ai-fitshop-online.onrender.com/recommend", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -50,7 +50,7 @@ function getRecommendation() {
 function sendMsg() {
     const msg = document.getElementById("msg").value;
 
-    fetch("http://127.0.0.1:8000/chat", {
+    fetch("https://ai-fitshop-online.onrender.com/chat", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
