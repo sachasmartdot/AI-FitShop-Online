@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>SachaSmart MVP</title>
+    <title>SachaSmart Shop</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -10,11 +10,21 @@
 
 <div id="products"></div>
 
+<hr>
+
 <h2>Find your size</h2>
 <input type="number" id="foot" placeholder="Foot length in cm">
 <button onclick="getRecommendation()">Recommend</button>
 
 <p id="result"></p>
+
+<hr>
+
+<h2>Assistant</h2>
+<input type="text" id="msg">
+<button onclick="sendMsg()">Send</button>
+
+<div id="chat"></div>
 
 <script src="app.js"></script>
 
