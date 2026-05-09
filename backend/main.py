@@ -2,6 +2,14 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import json
 from fit_engine import recommend_size
+# pour passe en prod cette version est mieux
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+with open(os.path.join(BASE_DIR, "products.json")) as f:
+    products = json.load(f)
+
 
 app = FastAPI()
 
@@ -14,8 +22,8 @@ app.add_middleware(
 )
 
 # Load products
-with open("products.json") as f:
-    products = json.load(f)
+#with open("products.json") as f:
+#    products = json.load(f)
 
 
 # ----------- ROUTES -----------
