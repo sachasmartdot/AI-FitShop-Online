@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Classic Sneakers",
+    "price": 50,
+    "runs_small": true,
+    "runs_large": false
+  },
+  {
+    "id": 2,
+    "name": "Urban Shoes",
+    "price": 65,
+    "runs_small": false,
+    "runs_large": false
+  }
+]
